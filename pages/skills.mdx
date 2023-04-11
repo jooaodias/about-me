@@ -1,0 +1,51 @@
+---
+type: page
+title: Skills
+date: 2021-03-18
+---
+
+# Skills
+
+Here's some of my tech skills.
+
+import Image from "next/image";
+
+export const Container = ({ children }) => {
+  return (
+    <div style={{ display: "flex", flexDirection: "row", gap: "16px" }}>
+      {children}
+    </div>
+  );
+};
+
+export const Card = ({ imageSrc, title }) => {
+  return (
+    <div
+      style={{
+        backgroundColor: "white",
+        boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
+        borderRadius: "4px",
+        overflow: "hidden",
+        maxWidth: "300px",
+        margin: "auto",
+      }}
+    >
+      <Image
+        src={imageSrc}
+        alt={title}
+        width={300}
+        height={300}
+        priority
+        className="next-image"
+      />
+    </div>
+  );
+};
+
+<Container>
+  <Card imageSrc="/images/react.png" title="React" />
+  <Card imageSrc="/images/next.png" title="Next" />
+  <Card imageSrc="/images/node.png" title="React" />
+</Container>
+<br />
+

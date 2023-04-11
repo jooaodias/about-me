@@ -1,0 +1,36 @@
+---
+type: page
+title: João Aleixo
+date: 2023-04-11
+---
+
+# João Vitor Aleixo Dias
+
+Hello, I'm a Software Engineer at Venturus. I enjoy working with React and creating beautiful frontend experiences.
+
+This portfolio is built with **Next.js** and you can view the source code at this [repo](https://github.com/jooaodias/about-me).
+
+---
+
+import Image from "next/image";
+
+export function DivStyle({ children }) {
+  return (
+    <div style={{ display: "flex", flexDirection: "column" }}>{children}</div>
+  );
+}
+
+<DivStyle>
+  <Image
+    src="https://github.com/jooaodias.png"
+    url="https://github.com/jooaodias.png"
+    alt="photo of João Vitor"
+    width={180}
+    height={180}
+    priority
+    className="next-image"
+  />
+  - GitHub [@jooaodias](https://github.com/jooaodias/) 
+  - Linkedin [@joao-aleixo-dias](https://www.linkedin.com/in/joao-aleixo-dias/)
+  - Email joaovitordias92040@gmail.com
+</DivStyle>
